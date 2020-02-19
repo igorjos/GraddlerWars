@@ -11,13 +11,13 @@ let port = process.env.PORT || 3000;
 
 let Player = require('./models/player.js');
 
-let mysql      = require('mysql');
+let mysql      = require('mysql2');
 let connectionDetails = {
-    host     : 'mysql',
-    user     : 'graddlerwars',
-    password : 'graddlerwars',
+    host     : 'localhost',
+    user     : 'demo',
+    password : '12345678',
     database : 'graddlerwars',
-    charset  : "LATIN1"
+    charset  : "UTF8"
 };
 
 app.get('/', function(req, res){
